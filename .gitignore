@@ -7,6 +7,7 @@ __pycache__/
 venv/
 .env/
 .envrc
+.venv/
 
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -40,3 +41,18 @@ dist/
 # Ignore all .pkl files (models, preprocessors, etc.)
 *.pkl
 
+# Ignore processed/interim data (keep raw data)
+data/processed/
+data/interim/
+
+# Ignore MLflow artifacts and database
+mlruns/
+mlflow.db
+*.db
+
+# Ignore Docker volumes and temporary files
+.docker/
+
+# Ignore any environment variable files
+.env.local
+*.env
